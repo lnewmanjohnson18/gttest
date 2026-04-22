@@ -1,0 +1,7 @@
+.beads/
+.claude/
+.runtime/
+CLAUDE.md
+__pycache__/
+*.pyc
+todos.json
