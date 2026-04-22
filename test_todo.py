@@ -85,6 +85,43 @@ class TodoIntegrationTests(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 todo_mod.main()
 
+    def test_special_characters_in_title(self):
+        special_titles = [
+            "Buy milk & eggs",
+            "Fix bug: null pointer (urgent!)",
+            'Say "hello world"',
+            "Path: C:\\Users\\test",
+            "Emoji 🎉 party",
+            "Tab\there",
+            "Newline\nin title",
+            "<script>alert('xss')</script>",
+            "100% done",
+            "Price: $9.99 / item",
+        ]
+        for title in special_titles:
+            todo_mod.cmd_add(title.split(" ") if " " in title else [title])
+
+        todos = todo_mod.load_todos()
+        self.assertEqual(len(todos), len(special_titles))
+        for i, expected in enumerate(special_titles):
+            stored = todos[i]["title"]
+            # titles passed as word-split args are rejoined with spaces
+            self.assertEqual(stored, " ".join(expected.split(" ")))
+
+    def test_add_ten_and_delete_all(self):
+        for i in range(1, 11):
+            todo_mod.cmd_add([f"Todo number {i}"])
+
+        todos = todo_mod.load_todos()
+        self.assertEqual(len(todos), 10)
+
+        ids = [t["id"] for t in todos]
+        for tid in ids:
+            todo_mod.cmd_delete([str(tid)])
+
+        todos = todo_mod.load_todos()
+        self.assertEqual(todos, [])
+
 
 if __name__ == "__main__":
     unittest.main()
