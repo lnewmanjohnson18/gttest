@@ -49,3 +49,10 @@
 {"id":"int-d77aa5d1","kind":"field_change","created_at":"2026-04-22T16:42:42.426988265Z","actor":"daemon","issue_id":"hq-wisp-xnsa","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
 {"id":"int-94181423","kind":"field_change","created_at":"2026-04-22T16:42:43.097304174Z","actor":"daemon","issue_id":"hq-wisp-7q67","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
 {"id":"int-474b7d45","kind":"field_change","created_at":"2026-04-22T16:47:52.569656609Z","actor":"daemon","issue_id":"hq-wisp-6nrm","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
+{"id":"int-701db18c","kind":"field_change","created_at":"2026-04-22T16:47:53.301144363Z","actor":"daemon","issue_id":"hq-wisp-p8oa","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
+{"id":"int-b0aec944","kind":"field_change","created_at":"2026-04-22T16:53:01.24876296Z","actor":"daemon","issue_id":"hq-wisp-jm4z","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
+{"id":"int-51dfa2f4","kind":"field_change","created_at":"2026-04-22T16:58:11.375014626Z","actor":"daemon","issue_id":"hq-wisp-6xkz","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
+{"id":"int-5dbe0f4b","kind":"field_change","created_at":"2026-04-22T16:58:12.090231198Z","actor":"daemon","issue_id":"hq-wisp-351w","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
+{"id":"int-5c6c8642","kind":"field_change","created_at":"2026-04-22T16:58:13.767438632Z","actor":"daemon","issue_id":"hq-wisp-1j7l","extra":{"field":"status","new_value":"hooked","old_value":"open"}}
+{"id":"int-2c6c8831","kind":"field_change","created_at":"2026-04-22T16:58:13.767486478Z","actor":"daemon","issue_id":"hq-wisp-1j7l","extra":{"field":"assignee","new_value":"deacon/dogs/alpha","old_value":""}}
+{"id":"int-1e3d0b1a","kind":"field_change","created_at":"2026-04-22T16:58:17.289352373Z","actor":"daemon","issue_id":"hq-wisp-wb5o","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Closed"}}
