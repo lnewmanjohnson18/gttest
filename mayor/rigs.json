@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rigs": {
+    "gttest": {
+      "git_url": "https://github.com/lnewmanjohnson18/gttest",
+      "added_at": "2026-04-22T12:28:54.296518254-04:00",
+      "beads": {
+        "repo": "",
+        "prefix": "gt"
+      }
+    }
+  }
+}
